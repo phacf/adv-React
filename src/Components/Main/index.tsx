@@ -1,8 +1,8 @@
 import * as S from './styles'
 
 const Main = ({
-                  title = 'React Avançado',
-                  description = 'Typescript, react, next, styled components'
+  title = 'React Avançado',
+  description = 'Typescript, react, next, styled components'
 }) => {
   return (
     <S.Wrapper>
