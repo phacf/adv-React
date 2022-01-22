@@ -1,9 +1,20 @@
+import { Story, Meta } from '@storybook/react/types-7-0'
 import Main from '.'
 
-import { Story, Meta } from '@storybook/react/types-7-0'
 export default {
   title: 'Main',
   component: Main
 } as Meta
 
-export const Basic: Story = (args) => <Main {...args} />
+export const Basic = () => <Main />
+
+export const Default: Story = (
+  args: JSX.IntrinsicAttributes & {
+    title?: string | undefined
+    description?: string | undefined
+  }
+) => <Main {...args} />
+Default.args = {
+  title: 'Default Title',
+  description: 'Default Description'
+}
